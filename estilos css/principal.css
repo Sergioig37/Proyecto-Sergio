@@ -5,26 +5,34 @@ body {
     height: 100vh;
 }
 
+:root{
+    --imagenes-padding: 30px;
+    --imagenes-margin: 10px;
+    --imagenes-size: 400px;
+    --pfuentes:1.2em;
+}
+
+
 .contenedorGrande{
     
     display: grid;
     background-color: aqua;
     grid-template-columns: 20vw 30vw 30vw 20vw;
-    grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
+    grid-template-rows: 20vh 100vh 100vh 100vh 20vh;
     grid-template-areas: "header header header header"
-                        "nav main main aside"
-                        "nav main main aside"
-                        "nav main main aside"
+                        "nav main main main"
+                        "nav main main main"
+                        "nav main main main"
                         "footer footer footer footer";
 }
 
 .capaOpacidad{
-    overflow: hidden;
+  overflow: hidden;
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,0.4);
   text-align: center;
-  font-size: 2em;
+  font-size: 1.4em;
   color: white;
 }
 
@@ -44,9 +52,7 @@ header{
 
  
 }
-aside{
-    grid-area: aside;
-}
+
 footer{
     grid-area: footer;
 }
@@ -57,15 +63,27 @@ main{
     flex-direction: column;
     text-align: center;
     background-color: white;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .seccion{
-    height: 45%;
+    height: 30%;
     font-size: 1.1em;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     margin: 0;
+    position: relative;
+    font-size: var(--pfuentes);
+}
+
+.seccion.contacto{
+    height: 20%;
+}
+
+img{
+    width: var(--imagenes-size);
+    height:  var(--imagenes-size);
 }
 
 h3{
@@ -73,6 +91,50 @@ h3{
 }
 
 .seccion.hogar{
-
+    background-color: antiquewhite;
+    position: relative;
 }
+.imagenHogar{
+   padding: var(--imagenes-padding);
+   margin: var(--imagenes-margin);
+   background-color: cadetblue;
+}
+
+.h3.hogar{
+    padding: 20px;
+    margin-top: -50px;
+}
+
+.p.hogar{
+    position: absolute;
+    width: 55%;
+    right: 50px;
+    bottom: 50px;
+    letter-spacing: 1px;
+}
+
+.seccion.asesoramiento{
+    background-color: chartreuse;
+}
+
+.h3.aseso{
+    position: absolute;
+    top: 20px;
+    left: 35%;
+}
+
+.p.ase{
+    width: 500px;
+   letter-spacing: 1px;
+    margin-left: 90px;
+}
+.imagenAsesorar{
+  position: absolute;
+  right: 100px;
+  width: var(--imagenes-size);
+  height: var(--imagenes-size);
+}
+
+
+
 
