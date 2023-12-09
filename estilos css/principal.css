@@ -7,7 +7,7 @@ body {
 
 :root{
     --imagenes-padding: 30px;
-    --imagenes-margin: 10px;
+    --margin-generico: 10px;
     --imagenes-size: 400px;
     --pfuentes:1.2em;
 }
@@ -81,7 +81,7 @@ main{
     height: 20%;
 }
 
-img{
+.imagenAsesorar,.imagenHogar{
     width: var(--imagenes-size);
     height:  var(--imagenes-size);
 }
@@ -91,12 +91,12 @@ h3{
 }
 
 .seccion.hogar{
-    background-color: antiquewhite;
+   
     position: relative;
 }
 .imagenHogar{
    padding: var(--imagenes-padding);
-   margin: var(--imagenes-margin);
+   margin: var(--margin-generico);
    background-color: cadetblue;
 }
 
@@ -113,9 +113,6 @@ h3{
     letter-spacing: 1px;
 }
 
-.seccion.asesoramiento{
-    background-color: chartreuse;
-}
 
 .h3.aseso{
     position: absolute;
@@ -135,6 +132,50 @@ h3{
   height: var(--imagenes-size);
 }
 
+.seccion.valoraciones{
+    background-color: bisque;
+}
+
+.articleContainer{
+    background-color: aqua;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.valoracion{
+    background-color: chocolate;
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.imagenValoracion{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 25%;
+    margin-top: var(--margin-generico);
+}
+
+.review{
+    font-size: 20px;
+    
+}
 
 
+.seccion.contacto{
+    background-color: cornsilk;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+}
 
+.botonContacto{
+    width: 400px;
+    height: 50px;
+}
+.h3.contacto{
+    margin-bottom: var(--margin-generico);
+}
