@@ -16,14 +16,14 @@ body {
 .contenedorGrande{
     
     display: grid;
-    background-color: aqua;
-    grid-template-columns: 20vw 30vw 30vw 20vw;
+   
+    grid-template-columns: 20vw 40vw 40vw ;
     grid-template-rows: 20vh 100vh 100vh 100vh 20vh;
-    grid-template-areas: "header header header header"
-                        "nav main main main"
-                        "nav main main main"
-                        "nav main main main"
-                        "footer footer footer footer";
+    grid-template-areas: "header header header "
+                        "main main main "
+                        "main main main "
+                        "main main main "
+                        "footer footer footer";
 }
 
 .capaOpacidad{
@@ -41,9 +41,7 @@ body {
 main{
     grid-area: main;
 }
-nav{
-    grid-area: nav;
-}
+
 header{
     grid-area: header;
     width: 100%;
@@ -178,4 +176,20 @@ h3{
 }
 .h3.contacto{
     margin-bottom: var(--margin-generico);
+}
+
+.pie{
+    display: flex;
+    justify-content: center;
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    background-color: aquamarine;
+    height: 300px;
+    width: 150px;
 }
