@@ -60,157 +60,27 @@ footer{
 
 main{
     display: flex;
-    flex-direction: column;
     text-align: center;
-    background-color: white;
+    background-color: blue;
     font-size: 1.1em;
-}
-
-.seccion{
-    height: 30%;
-    font-size: 1.1em;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0;
-    position: relative;
-    font-size: var(--pfuentes);
-}
-
-.seccion.contacto{
-    height: 20%;
-}
-
-.imagenAsesorar,.imagenHogar{
-    width: var(--imagenes-size);
-    height:  var(--imagenes-size);
-}
-
-h3{
-    margin: 0;
-}
-
-.seccion.hogar{
-   
-    position: relative;
-}
-.imagenHogar{
-   padding: var(--imagenes-padding);
-   margin: var(--margin-generico);
-   background-color: cadetblue;
-}
-
-.h3.hogar{
-    padding: 20px;
-    margin-top: -50px;
-}
-
-.p.hogar{
-    position: absolute;
-    width: 55%;
-    right: 50px;
-    bottom: 150px;
-    letter-spacing: 1px;
-}
-
-
-.h3.aseso{
-    position: absolute;
-    top: 20px;
-    left: 35%;
-}
-
-.p.ase{
-    width: 500px;
-   letter-spacing: 1px;
-    margin-left: 90px;
-}
-.imagenAsesorar{
-  position: absolute;
-  right: 100px;
-  width: var(--imagenes-size);
-  height: var(--imagenes-size);
-}
-
-.efecto{
-    position: absolute;
-    right: 100px;
-    background-color: rgba(0,0,0,0.4);
-    width: var(--imagenes-size);
-    height: var(--imagenes-size);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    visibility: hidden;
-}
-
-.efecto:hover {
-   visibility: visible;
-}
-
-.botonContacto{
-    width: 200px;
-    height: 50px;
-}
-
-.articleContainer{
     
-    height: 90%;
+
+}
+
+form{
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.valoracion{
-
-    width: 33%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.imagenValoracion{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin-top: var(--margin-generico);
+fieldset{
+    width: 50%;
+    height: 45%;
+  
 }
 
-.review{
-    font-size: 20px;
-    
-}
-
-
-.seccion.contacto{
-    
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: 1.5em;
-}
-
-.botonPropiedad{
-    width: 400px;
-    height: 50px;
-}
-
-button {
-    background-color: #eacee3;
-    color: #321c3b;
-    font-size: 1.2rem;
-    font-weight: 700;  
-     box-shadow: 0px 0px 0 #fff;
-    transition: box-shadow 0.25s ease-in-out;
-   
-  }
-
-  button:hover {
-    box-shadow: 8px 8px 0 black;
-  }
-
-.h3.contacto{
-    margin-bottom: var(--margin-generico);
-}
 
 .pie{
     display: flex;
@@ -279,4 +149,3 @@ a:hover{
 .apartados{
     margin-left: 50px;
 }
-
