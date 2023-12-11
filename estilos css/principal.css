@@ -16,13 +16,13 @@ body {
 .contenedorGrande{
     
     display: grid;
-   
+   overflow: hidden;
     grid-template-columns: 20vw 40vw 40vw ;
-    grid-template-rows: 20vh 100vh 100vh 100vh 20vh;
+    grid-template-rows: 20vh 80vh 80vh 80vh 20vh;
     grid-template-areas: "header header header "
-                        "main main main "
-                        "main main main "
-                        "main main main "
+                        "nav main main "
+                        "nav main main "
+                        "nav main main "
                         "footer footer footer";
 }
 
@@ -46,7 +46,9 @@ header{
     grid-area: header;
     width: 100%;
     height: 100%;
-    background-color: brown;
+    background-image: url("/imagenes/headerFoto.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
 
  
 }
@@ -107,7 +109,7 @@ h3{
     position: absolute;
     width: 55%;
     right: 50px;
-    bottom: 50px;
+    bottom: 150px;
     letter-spacing: 1px;
 }
 
@@ -130,12 +132,29 @@ h3{
   height: var(--imagenes-size);
 }
 
-.seccion.valoraciones{
-    background-color: bisque;
+.efecto{
+    position: absolute;
+    right: 100px;
+    background-color: rgba(0,0,0,0.4);
+    width: var(--imagenes-size);
+    height: var(--imagenes-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.efecto:hover {
+   visibility: visible;
+}
+
+.botonContacto{
+    width: 200px;
+    height: 50px;
 }
 
 .articleContainer{
-    background-color: aqua;
+    
     height: 90%;
     display: flex;
     align-items: center;
@@ -143,17 +162,17 @@ h3{
 }
 
 .valoracion{
-    background-color: chocolate;
+
     width: 33%;
     height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .imagenValoracion{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin-left: 25%;
     margin-top: var(--margin-generico);
 }
 
@@ -164,16 +183,31 @@ h3{
 
 
 .seccion.contacto{
-    background-color: cornsilk;
+    
     align-items: center;
     justify-content: space-evenly;
     font-size: 1.5em;
 }
 
-.botonContacto{
+.botonPropiedad{
     width: 400px;
     height: 50px;
 }
+
+button {
+    background-color: #eacee3;
+    color: #321c3b;
+    font-size: 1.2rem;
+    font-weight: 700;  
+     box-shadow: 0px 0px 0 #fff;
+    transition: box-shadow 0.25s ease-in-out;
+   
+  }
+
+  button:hover {
+    box-shadow: 8px 8px 0 black;
+  }
+
 .h3.contacto{
     margin-bottom: var(--margin-generico);
 }
@@ -186,10 +220,63 @@ h3{
 .navegacion{
     display: flex;
     flex-direction: column;
-    align-items: center;
+   
     justify-content: space-evenly;
+    height: 800px;
+    width: 400px;
+    font-size: 1.3em;
     position: absolute;
-    background-color: aquamarine;
-    height: 300px;
-    width: 150px;
+    right: 100%;
+    transform: translateX(1em);
+    transition: 0.2s transform linear;
+    background-color: rgb(124, 216, 219);
+
 }
+
+nav:hover {
+    transform: translateX(100%);
+}
+
+a{
+    text-decoration: none;
+    color: black;  
+}
+
+a:hover{
+    color: white;
+}
+
+.contenedor{
+    width: 200px;
+    height: 50px;
+    border-radius: 40%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.interior{
+    width: 50%;
+    height: 70%;
+    background-color: beige;
+    border-radius: 30%;
+   
+    transition: 0.5s transform;
+}
+
+.interior:hover{
+   transform: translateX(100%);
+}
+
+
+.modoOscuro{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apartados{
+    margin-left: 50px;
+}
+

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/estilos css/normalize.css" />
     <link rel="stylesheet" href="/estilos css/principal.css" />
+    <link rel="stylesheet" href="/icofont/icofont.min.css">
     <title>ProperSell</title>
 </head>
 
@@ -15,17 +16,39 @@
             <div class="capaOpacidad">
                 <h1>ProperSell</h1>
                 <p>Venta y compra de propiedades</p>
-                <button>Modo Oscuro</button>
             </div>
         </header>
         <nav class="navegacion">
-            <a href="index.html">Página principal</a>
-            <a href="propiedades.html">Propiedades</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="">Proximamente...</a>
+            <div class="logo">
+                <i></i>
+            </div>
+            <div class="apartados">
+                <i class="icofont-home"></i>
+                <a href="index.html">Página principal</a>
+            </div>
+            <div class="apartados">
+                <i class="icofont-search-property"></i>
+                <a href="propiedades.html">Propiedades</a>
+            </div>
+            <div class="apartados">
+                <i class="icofont-contacts-alt">&#xec50;</i>
+                <a href="contacto.html">Contacto</a>
+            </div>
+
+            <div class="apartados">
+                 <a href="">Proximamente...</a>
+            </div>
+          
+
+            <div class="modoOscuro">
+                <p>Modo Oscuro</p>
+                <div class="contenedor">
+                    <div class="interior"></div>
+                </div>
+            </div>
+
         </nav>
         <main>
-            <h2>Lider comercial del sector</h2>
             <section class="seccion hogar">
                 <h3 class="h3 hogar">Cientos de miles de personas han encontrado un hogar permanente</h3>
                 <img src="/imagenes/plantio_mg_2945.jpg" class="imagenHogar" alt="">
@@ -62,6 +85,9 @@
                     una asesoría gratis con nuestor mejores agentes al 11111-111111-11111.
                 </p>
                 <img src="/imagenes/asesoramiento.jpeg" class="imagenAsesorar" alt="">
+                <div class="efecto">
+                    <button class="botonContacto" onclick="location.href='contacto.html'">Contactar</button>
+                </div>
             </section>
             <section class="seccion valoraciones">
                 <h3>Nuestros clientes nos avalan</h3>
@@ -102,7 +128,7 @@
             <section class="seccion contacto">
                 <article class="vender">
                     <h3 class="h3 contacto">¿Quieres vender o comprar una propiedad?</h3>
-                    <button class="botonContacto" href="#">Pulsa aquí</button>
+                    <button class="botonPropiedad" onclick="location.href='propiedades.html'">Pulsa aquí</button>
                 </article>
                 <article>
                     <h3 class="h3 contacto">¿Quieres ponerte en contacto con nosotros?</h3>
