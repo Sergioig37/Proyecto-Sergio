@@ -8,7 +8,7 @@ body {
 :root{
     --imagenes-padding: 30px;
     --margin-generico: 10px;
-    --imagenes-size: 400px;
+    --imagenes-size: 350px;
     --pfuentes:1.2em;
 }
 
@@ -18,7 +18,7 @@ body {
     display: grid;
    overflow: hidden;
     grid-template-columns: 20vw 40vw 40vw ;
-    grid-template-rows: 20vh 80vh 80vh 80vh 20vh;
+    grid-template-rows: 20vh 90vh 90vh 90vh 20vh;
     grid-template-areas: "header header header "
                         "nav main main "
                         "nav main main "
@@ -67,13 +67,12 @@ main{
 }
 
 .seccion{
-    height: 30%;
+    height: 33%;
     font-size: 1.1em;
     display: flex;
-    justify-content: center;
+
     flex-direction: column;
-    margin: 0;
-    position: relative;
+    margin-bottom: 20px;
     font-size: var(--pfuentes);
 }
 
@@ -81,67 +80,91 @@ main{
     height: 20%;
 }
 
-.imagenAsesorar,.imagenHogar{
-    width: var(--imagenes-size);
-    height:  var(--imagenes-size);
+.seccion.hogar{
+  
+    display: flex;
+    
 }
+
 
 h3{
     margin: 0;
 }
 
-.seccion.hogar{
-   
-    position: relative;
+.conten{
+  
+    height: 75%;
+    display: flex;
+    justify-content: space-evenly;
 }
+
 .imagenHogar{
    padding: var(--imagenes-padding);
    margin: var(--margin-generico);
+   width: var(--imagenes-size);
+   height: var(--imagenes-size);
 }
 
 
 .h3.hogar{
-    padding: 20px;
-    margin-top: -50px;
+  
 }
 
 .p.hogar{
-    position: absolute;
-    width: 55%;
-    right: 50px;
-    bottom: 150px;
-    letter-spacing: 1px;
+   width: 80%;
+   margin-top: 150px;
+   margin-right: 30px;
+   
 }
 
 
+
+.seccion.asesoramiento{
+    justify-content: space-evenly;
+}
+
+.contenAs{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.contenConten{
+    width: 50%;
+    margin-right: 20px;
+}
+
 .h3.aseso{
-    position: absolute;
-    top: 20px;
-    left: 35%;
+  
 }
 
 .p.ase{
-    width: 500px;
+    width: 100%;
    letter-spacing: 1px;
-    margin-left: 90px;
 }
 .imagenAsesorar{
-  position: absolute;
-  right: 100px;
+
   width: var(--imagenes-size);
   height: var(--imagenes-size);
 }
 
 .efecto{
-    position: absolute;
-    right: 100px;
     background-color: rgba(0,0,0,0.4);
-    width: var(--imagenes-size);
-    height: var(--imagenes-size);
     display: flex;
     align-items: center;
     justify-content: center;
     visibility: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.contenImagen{
+    background: url("/imagenes/asesoramiento.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90%;
+    width: 45%;
+    
 }
 
 .seccion:hover .efecto{
