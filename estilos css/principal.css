@@ -97,8 +97,8 @@ h3{
 .imagenHogar{
    padding: var(--imagenes-padding);
    margin: var(--margin-generico);
-   background-color: cadetblue;
 }
+
 
 .h3.hogar{
     padding: 20px;
@@ -144,8 +144,9 @@ h3{
     visibility: hidden;
 }
 
-.efecto:hover {
+.seccion:hover .efecto{
    visibility: visible;
+
 }
 
 .botonContacto{
@@ -194,7 +195,7 @@ h3{
     height: 50px;
 }
 
-button {
+.botonContacto {
     background-color: #eacee3;
     color: #321c3b;
     font-size: 1.2rem;
@@ -204,8 +205,25 @@ button {
    
   }
 
-  button:hover {
-    box-shadow: 8px 8px 0 black;
+  .botonContacto:hover {
+    box-shadow: 8px 8px 0 white;
+  }
+
+
+
+  .botonPropiedad {
+    background-color: #eacee3;
+    color: #321c3b;
+    font-size: 1.2rem;
+    font-weight: 700;  
+     box-shadow: 0px 0px 0 #fff;
+    transition: transform  0.25s ease-in-out;
+   
+  }
+
+  .botonPropiedad:hover {
+    box-shadow: 8px 8px 0 white;
+    transform: scale(1.2, 1.2);
   }
 
 .h3.contacto{
@@ -224,7 +242,7 @@ button {
     justify-content: space-evenly;
     height: 800px;
     width: 300px;
-    font-size: 1.3em;
+    font-size: 1.5em;
     position: absolute;
     right: 100%;
     transform: translateX(1em);

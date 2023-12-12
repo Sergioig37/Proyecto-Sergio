@@ -53,11 +53,31 @@
             <form action="">
 
                 <fieldset>
-                    <legend>Información de contacto</legend>s
+                    <legend>Información de contacto</legend>
+
+                    <div class="nombres">
+                        <label for="nombre">Nombre </label>
+                        <input type="text" name="nombre" class="nombre" id="nom">
+                    </div>
+
+                    <div class="apellido">
+                        <label for="apellidos">Apellidos </label>
+                        <input type="text" name="apellidos" class="apellidos" id="apell">
+                    </div>
+
+                    <div class="gmail">
+                        <label for="mail">Correo </label>
+                        <input type="email" name="mail" class="mail" id="correo">
+                    </div>
                 </fieldset>
 
                 <fieldset>
-                    <legend>Motivo de contacto</legend>s
+                    <legend>Motivo de contacto</legend>
+                    <label for="check"></label>
+                    <input type="checkbox" name="check" class="check" value="asesoramiento">Asesoramiento
+                    
+                    <label for="check"></label>
+                    <input type="checkbox" name="check" class="check" value="gestion">Gestión de la propiedad
                 </fieldset>
                 <button class="botonEnviar">Enviar</button>
             </form>
