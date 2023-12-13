@@ -49,36 +49,75 @@
 
         </nav>
         <main class="cuerpo">
-            <form action="">
-
+            <form name="Contacto" data-netlify="true" method="POST">
                 <fieldset>
-                    <legend>Información de contacto</legend>
-
-                    <div class="nombres">
-                        <label for="nombre">Nombre </label>
-                        <input type="text" name="nombre" class="nombre" id="nom">
+                    <legend>Información Personal</legend>
+                    <div class="nombreFormulario">
+                        <label for="nombre">Nombre: </label>
+                        <br>
+                        <input type="text" id="nombreid" name="nombre" minlength="3" maxlength="20" required>
                     </div>
-
-                    <div class="apellido">
-                        <label for="apellidos">Apellidos </label>
-                        <input type="text" name="apellidos" class="apellidos" id="apell">
+                    <br>
+                    <div class="emailFormulario">
+                        <label for="email">Email: </label>
+                        <br>
+                        <input type="email" id="emailid" name="email">
                     </div>
-
-                    <div class="gmail">
-                        <label for="mail">Correo </label>
-                        <input type="email" name="mail" class="mail" id="correo">
+                    <br>
+                    <div class="telefonoFormulario">
+                        <label for="telefono">Telefono: </label>
+                        <br>
+                        <input type="tel" id="telefonoid" name="telefono" pattern="[0-9]{9}">
+                    </div>
+                    <br>
+                    <div class="mensajeFormulario">
+                        <label for="mensaje">Mensaje: </label>
+                        <br>
+                        <textarea cols="10" rows="10" name="mensaje"></textarea>
                     </div>
                 </fieldset>
+                <fieldset class="infoFormulario">
+                    <legend>Motivo del contacto</legend>
+                    <div class="ventaFormulario">
+                        <label for="vendeOcompra">Vende o Compra</label>
+                        <br>
+                        <select name="vendeOcompra">
+                            <option value="Vender">Vender</option>
+                            <option value="Comprar">Comprar</option> 
+                            <option value="Asesoria">Asesoría</option>
+                       </select>
+                       <br>
+                    </div>
 
-                <fieldset>
-                    <legend>Motivo de contacto</legend>
-                    <label for="check"></label>
-                    <input type="checkbox" name="check" class="check" value="asesoramiento">Asesoramiento
+                    <div class="presupuestoFormulario">
+                        <label for="presupuesto">Presupuesto: </label>
+                        <br>
+                       <input type="number" id="presupuestoid" name="presupuesto" min="1000" max="100000">
+                    </div>
+                </fieldset>
+                <fieldset class="contacto">
+                    <legend>Contacto</legend>
+                    <div class="modoContacto">
+                        <p>Escoja método de contacto</p>
+                        <label for="FormaContacto">Email</label>
+                        <br>
+                        <input type="radio" id="radioEmail" name="FormaContacto" class="radioEmail" value="Email">
+                        <br>
+                        <label for="FormaContacto"> Teléfono  </label>
+                        <br>
+                        <input type="radio" id="radioTelefono" name="FormaContacto" class="radioTelefono" value="Teléfono">
+                    </div>
                     
-                    <label for="check"></label>
-                    <input type="checkbox" name="check" class="check" value="gestion">Gestión de la propiedad
+                    <div class="horaYhora">
+                        <p>Si eligió teléfono escoja una fecha y hora</p>
+                        <label for="fecha">Fecha :</label>
+                        <br>
+                        <input type="date" id="fechaid" name="fecha" min="2023-10-19">
+                        <label for="hora">Hora: </label>
+                        <input type="time" id="horaid" name="hora">
+                    </div>
+                    <button type="submit" class="boton">Enviar</button>
                 </fieldset>
-                <button class="botonEnviar">Enviar</button>
             </form>
         </main>
 
