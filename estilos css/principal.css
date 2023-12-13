@@ -10,8 +10,21 @@ body {
     --margin-generico: 10px;
     --imagenes-size: 350px;
     --pfuentes:1.2em;
+    --h3fuentes: 1.4em;
+    --fondoSecciones: #D0E8E2;
+    --pFondo: #78AEC2;
+    --fondoMain: #C3F9FF;
+    --letraP: textoPequenio;
+    --h3Letra: pt;
 }
 
+@font-face {
+    font-family: textoPequenio;
+    src: url(/fonts/heebo/Heebo-VariableFont_wght.ttf);
+
+    font-family: pt;
+    src: url(/fonts/pt/PTSerif-BoldItalic.ttf)
+}
 
 .contenedorGrande{
     
@@ -25,6 +38,9 @@ body {
                         "nav main main "
                         "footer footer footer";
 }
+
+
+
 
 .capaOpacidad{
   overflow: hidden;
@@ -40,6 +56,7 @@ body {
 
 main{
     grid-area: main;
+    background-color: var(--fondoMain);
 }
 
 header{
@@ -55,7 +72,10 @@ header{
 
 footer{
     grid-area: footer;
+    background-color: var(--pFondo);
 }
+
+
 
 
 main{
@@ -67,13 +87,14 @@ main{
 }
 
 .seccion{
-    height: 33%;
+    height: 30%;
     font-size: 1.1em;
     display: flex;
-
     flex-direction: column;
     margin-bottom: 20px;
     font-size: var(--pfuentes);
+    background-color: var(--fondoSecciones);
+    color: black;
 }
 
 .seccion.contacto{
@@ -83,16 +104,22 @@ main{
 .seccion.hogar{
   
     display: flex;
+    justify-content: space-evenly;
     
 }
 
+p{
+    font-size: var(--pfuentes);
+    font-family: var(--letraP);
+}
 
 h3{
     margin: 0;
+    font-size: var(--h3fuentes);
+    font-family: var(--h3Letra);
 }
 
 .conten{
-  
     height: 75%;
     display: flex;
     justify-content: space-evenly;
@@ -105,10 +132,6 @@ h3{
    height: var(--imagenes-size);
 }
 
-
-.h3.hogar{
-  
-}
 
 .p.hogar{
    width: 80%;
@@ -134,9 +157,6 @@ h3{
     margin-right: 20px;
 }
 
-.h3.aseso{
-  
-}
 
 .p.ase{
     width: 100%;
@@ -146,6 +166,10 @@ h3{
 
   width: var(--imagenes-size);
   height: var(--imagenes-size);
+}
+
+.seccion.valoraciones{
+    justify-content: space-between;
 }
 
 .efecto{
@@ -163,8 +187,8 @@ h3{
     background-size: cover;
     background-repeat: no-repeat;
     height: 90%;
-    width: 45%;
-    
+    width: 500px;
+    margin-right: 10%;
 }
 
 .seccion:hover .efecto{
@@ -187,7 +211,7 @@ h3{
 
 .valoracion{
 
-    width: 33%;
+    width: 30%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -200,10 +224,7 @@ h3{
     margin-top: var(--margin-generico);
 }
 
-.review{
-    font-size: 20px;
-    
-}
+
 
 
 .seccion.contacto{
@@ -211,6 +232,7 @@ h3{
     align-items: center;
     justify-content: space-evenly;
     font-size: 1.5em;
+  
 }
 
 .botonPropiedad{
@@ -270,7 +292,7 @@ h3{
     right: 100%;
     transform: translateX(1em);
     transition: 0.2s transform linear;
-    background-color: rgb(124, 216, 219);
+  background-color: var(--pFondo);;
 
 }
 
@@ -300,14 +322,10 @@ a:hover{
     width: 50%;
     height: 70%;
     background-color: beige;
-    border-radius: 30%;
-   
-    transition: 0.5s transform;
+    border-radius: 20px;
 }
 
-.interior:hover{
-   transform: translateX(100%);
-}
+
 
 
 .modoOscuro{

@@ -8,8 +8,14 @@ body {
 :root{
     --imagenes-padding: 30px;
     --margin-generico: 10px;
-    --imagenes-size: 400px;
+    --imagenes-size: 350px;
     --pfuentes:1.2em;
+    --h3fuentes: 1.4em;
+    --fondoSecciones: #D0E8E2;
+    --pFondo: #78AEC2;
+    --fondoMain: #C3F9FF;
+    --letraP: textoPequenio;
+    --h3Letra: pt;
 }
 
 
