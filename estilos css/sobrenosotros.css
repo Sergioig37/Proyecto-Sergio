@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    height: 100vh;
+}
+
+:root {
+    --imagenes-padding: 30px;
+    --margin-generico: 10px;
+    --imagenes-size: 45%;
+    --pfuentesSize: 1.3em;
+    --h3fuentes: 1.6em;
+    --fondoSecciones: #D0E8E2;
+    --pFondo: #78AEC2;
+    --fondoMain: #C3F9FF;
+    --pFont: textoPequenio;
+    --hFont: pt;
+}
+
+@font-face {
+    font-family: textoPequenio;
+    src: url(/fonts/gowun/Gowun_Batang/GowunBatang-Bold.ttf);
+
+    font-family: pt;
+    src: url(/fonts/pt/PTSerif-BoldItalic.ttf)
+}
+
+.contenedorGrande {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 130vh;
+    background-color: var(--fondoSecciones);
+}
+
+p {
+    font-family: var(--pFont);
+    font-size: var(--pfuentesSize);
+    text-align: center;
+}
+
+h4{
+    font-family: var(--hFont);
+    font-size: 1.3em;
+}
+
+h3 {
+    font-family: var(--hFont);
+    font-size: var(--h3fuentes);
+}
+
+.datosGenerales {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articulo.fundacion{
+    height: 33%;
+     width: 80%;
+    background-color: var(--pFondo);
+  
+  
+}
+
+p{
+    text-align: center;
+    
+}
+
+section {
+    width: 100%;
+}
+
+
+.capaOpacidad {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    font-size: 1.4em;
+    color: white;
+}
+
+
+header {
+    grid-area: header;
+    width: 100%;
+    height: 100%;
+    background-image: url("/imagenes/headerFoto.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+footer {
+    grid-area: footer;
+    background-color: var(--pFondo);
+}
+
+
+
+.pie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+    height: 100%;
+    width: 20%;
+    font-size: 1.5em;
+    position: absolute;
+    right: 100%;
+    transform: translateX(1em);
+    transition: 0.2s transform linear;
+    background-color: var(--pFondo);
+    ;
+
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.apartados {
+    width: fit-content;
+}
+
+
+nav:hover {
+    transform: translateX(100%);
+}
+
+
+a:hover {
+    color: white;
+}
+
+.contenedor {
+    width: 100px;
+    height: 25px;
+    border-radius: 30px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.interior {
+    width: 50%;
+    height: 100%;
+    background-color: beige;
+    border-radius: 50px;
+
+}
+
+
+.modoOscuro {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apartados {
+    margin-left: 50px;
+}
