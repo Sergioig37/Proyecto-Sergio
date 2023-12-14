@@ -46,7 +46,7 @@ main {
 }
 
 p {
-    font-family: 60%;
+    font-family: var(--pfuentesSize);
     font-size: var(--pfuentesSize);
     text-align: center;
 }
