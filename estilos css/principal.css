@@ -9,7 +9,7 @@ body {
     --imagenes-padding: 30px;
     --margin-generico: 10px;
     --imagenes-size: 45%;
-    --pfuentesSize: 1.3em;
+    --pfuentesSize: 1.8em;
     --h3fuentes: 1.6em;
     --fondoMain: #D0E8E2;
     --fondo: #78AEC2;
@@ -103,6 +103,8 @@ section {
     flex-direction: column;
     align-items: center;
     background-color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .contenGigante {
@@ -121,7 +123,7 @@ section {
 
 
 .contenImagen {
-    width: 30%;
+    width: 20%;
     margin-bottom: 20px;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -163,6 +165,7 @@ section {
     align-items: center;
     
     background-color: var(--fondoSecciones);
+    border-bottom: 2px #B9B9B9;
 }
 
 .articleContainer{
@@ -183,7 +186,7 @@ section {
 }
 
 .review{
-    font-size: 1.1em;
+    font-size: 1.4em;
 }
 
 
