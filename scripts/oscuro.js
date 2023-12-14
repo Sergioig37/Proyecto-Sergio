@@ -6,7 +6,7 @@ window.addEventListener("load", init);
 function init() {
 
     document.querySelector(".modoOscuro").addEventListener("click", activar);
-    document.querySelector(".hamburguesa").addEventListener("click", mostrar);
+
 
 }
 
@@ -44,7 +44,4 @@ function cambiarColor() {
 }
 
 
-function mostrar(){
-    
-}
 

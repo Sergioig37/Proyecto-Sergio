@@ -325,9 +325,23 @@ a:hover {
 
 
 @media (max-width: 1200px){
-    .navegacion{
+    .navegacion div{
         display: none;
     }
+    nav:hover div{
+        display: block;
+    }
+    nav:hover {
+        width: 70%;
+        align-items: center;
+    }
+
+    nav:hover .modoOscuro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .hamburguesa{
         display: flex;
         justify-content: center;
@@ -356,6 +370,7 @@ a:hover {
         align-items: center;
     }
 
+
     .contenImagen{
         width: 60%;
         height: 200px;
@@ -370,3 +385,5 @@ a:hover {
         flex-direction: column;
     }
 }
+
+
