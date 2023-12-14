@@ -11,9 +11,15 @@ body {
     --imagenes-size: 45%;
     --pfuentesSize: 1.3em;
     --h3fuentes: 1.6em;
-    --fondoSecciones: #D0E8E2;
-    --pFondo: #78AEC2;
-    --fondoMain: #C3F9FF;
+    --fondoMain: #D0E8E2;
+    --fondo: #78AEC2;
+    --fondoSecciones: #C3F9FF;
+    --fondoOscuro: #254D4C;
+    --fondoMainOscuro: #B9B9B9; 
+    --fondoSeccionesOscuro: #000000;
+    --colorTextos: black;
+    --colorTextosOscuro: white;
+    
     --pFont: textoPequenio;
     --hFont: pt;
 }
@@ -36,7 +42,7 @@ main {
     flex-direction: column;
     align-items: center;
     height: 130vh;
-    background-color: var(--fondoSecciones);
+    background-color: var(--fondoMain);
 }
 
 p {
@@ -66,7 +72,7 @@ h3 {
 .articulo.fundacion{
     height: 33%;
      width: 80%;
-    background-color: var(--pFondo);
+    background-color: var(--fondo);
   
   
 }
@@ -105,7 +111,7 @@ header {
 
 footer {
     grid-area: footer;
-    background-color: var(--pFondo);
+    background-color: var(--fondo);
 }
 
 
@@ -128,7 +134,7 @@ footer {
     right: 100%;
     transform: translateX(1em);
     transition: 0.2s transform linear;
-    background-color: var(--pFondo);
+    background-color: var(--fondo);
     ;
 
 }

@@ -11,9 +11,15 @@ body {
     --imagenes-size: 45%;
     --pfuentesSize: 1.3em;
     --h3fuentes: 1.6em;
-    --fondoSecciones: #D0E8E2;
-    --pFondo: #78AEC2;
-    --fondoMain: #C3F9FF;
+    --fondoMain: #D0E8E2;
+    --fondo: #78AEC2;
+    --fondoSecciones: #C3F9FF;
+    --fondoOscuro: #254D4C;
+    --fondoMainOscuro: #B9B9B9; 
+    --fondoSeccionesOscuro: #000000;
+    --colorTextos: black;
+    --colorTextosOscuro: white;
+    
     --pFont: textoPequenio;
     --hFont: pt;
 }
@@ -41,28 +47,34 @@ p {
     font-family: var(--pFont);
     font-size: var(--pfuentesSize);
     text-align: center;
+    color: var(--colorTextos);
 }
 
 h4{
     font-family: var(--hFont);
     font-size: 1.3em;
+    color: var(--colorTextos);
+    text-align: center;
 }
 
 h3 {
     font-family: var(--hFont);
     font-size: var(--h3fuentes);
+    color: var(--colorTextos);
+    text-align: center;
 }
 
 section {
     height: 30%;
-    margin-bottom: 20px;
+    background-color: #f8f9fa;
+  
 }
 
 .seccion.hogar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--fondoSecciones);
+   
 }
 
 .conten {
@@ -90,24 +102,27 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
 }
 
 .contenGigante {
    
     display: flex;
     justify-content: space-evenly;
+    
 }
 
 .contenConten {
     width: 45%;
     height: 100%;
-
+    
   
 }
 
 
 .contenImagen {
     width: 30%;
+    margin-bottom: 20px;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 20% 20% 20% 20% 20%;
@@ -178,6 +193,7 @@ section {
     flex-direction: column;
     align-items: center;
     margin-bottom: 0;
+    background-color: white;
 }
 
 .info{
@@ -194,7 +210,21 @@ section {
     text-align: center;
     font-size: 1.4em;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.hamburguesa{
+    margin-left: 20px;
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    display: none;
+    align-self: flex-end;
+}
+
 
 
 header {
@@ -204,13 +234,14 @@ header {
     background-image: url("/imagenes/headerFoto.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-
-
+    display: flex;
+    align-items: center;
 }
+
 
 footer {
     grid-area: footer;
-    background-color: var(--pFondo);
+    background-color: var(--fondo);
 }
 
 
@@ -233,7 +264,7 @@ footer {
     right: 100%;
     transform: translateX(1em);
     transition: 0.2s transform linear;
-    background-color: var(--pFondo);;
+    background-color: var(--fondo);;
 
 }
 a{
@@ -266,6 +297,7 @@ a:hover {
     border: 1px solid black;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .interior {
@@ -286,4 +318,52 @@ a:hover {
 
 .apartados {
     margin-left: 50px;
+}
+
+
+@media (max-width: 1200px){
+    .navegacion{
+        display: none;
+    }
+    .hamburguesa{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagenHogar{
+        width: 40%;
+        height: 50%;
+    }
+  
+    .contenImagen{
+        margin-bottom: 0;
+        height: 300px;
+    }
+}
+
+@media (max-width:480px){
+    .conten{
+        flex-direction: column;
+    }
+
+    .contenGigante{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenImagen{
+        width: 60%;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    .articleContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info{
+        flex-direction: column;
+    }
 }

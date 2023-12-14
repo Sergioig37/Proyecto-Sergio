@@ -11,9 +11,15 @@ body {
     --imagenes-size: 45%;
     --pfuentesSize: 1.3em;
     --h3fuentes: 1.6em;
-    --fondoSecciones: #D0E8E2;
-    --pFondo: #78AEC2;
-    --fondoMain: #C3F9FF;
+    --fondoMain: #D0E8E2;
+    --fondo: #78AEC2;
+    --fondoSecciones: #C3F9FF;
+    --fondoOscuro: #254D4C;
+    --fondoMainOscuro: #B9B9B9; 
+    --fondoSeccionesOscuro: #000000;
+    --colorTextos: black;
+    --colorTextosOscuro: white;
+    
     --pFont: textoPequenio;
     --hFont: pt;
 }
@@ -36,7 +42,7 @@ main{
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
-    background-color: var(--fondoSecciones);
+    background-color: var(--fondoMain);
 }
 
 form{
@@ -46,6 +52,7 @@ form{
 fieldset{
     margin-top: 10px;
     height: auto;
+    border: 2px solid black;
 }
 input{
     width: 95%;
@@ -80,6 +87,9 @@ legend{
     text-align: center;
     font-size: 1.4em;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .boton {
@@ -105,6 +115,16 @@ legend{
     margin: 20px;
 }
 
+.hamburguesa{
+    margin-left: 20px;
+    width: 100px;
+    height: 50px;
+    display: none;
+    align-self: flex-end;
+}
+
+
+
 header {
     grid-area: header;
     width: 100%;
@@ -112,13 +132,15 @@ header {
     background-image: url("/imagenes/headerFoto.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-
-
+    display: flex;
+    align-items: center;
 }
+
+
 
 footer {
     grid-area: footer;
-    background-color: var(--pFondo);
+    background-color: var(--fondo);
 }
 
 
@@ -141,9 +163,13 @@ footer {
     right: 100%;
     transform: translateX(1em);
     transition: 0.2s transform linear;
-    background-color: var(--pFondo);;
+    background-color: var(--fondo);;
 
 }
+
+
+
+
 a{
     text-align: center;
     text-decoration: none;
@@ -194,4 +220,31 @@ a:hover {
 
 .apartados {
     margin-left: 50px;
+}
+
+@media (max-width: 1200px){
+    .navegacion{
+        display: none;
+    }
+    .hamburguesa{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    form{
+        width: 70%;
+    }
+}
+
+@media (max-width: 700px){
+    .navegacion{
+        display: none;
+    }
+    .hamburguesa{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
 }
