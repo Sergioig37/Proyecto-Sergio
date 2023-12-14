@@ -48,6 +48,7 @@ main {
 p {
     font-family: var(--pFont);
     font-size: var(--pfuentesSize);
+    background-color: beige;
     text-align: center;
 }
 
@@ -214,13 +215,4 @@ a:hover {
     p{
       font-size: 15px;
     }
-}
-
-@media (orientation: landscape){
-    p{
-        font-size: 10px;
-      }
-      .articulo.fundacion{
-        height: 20%;
-      }
 }

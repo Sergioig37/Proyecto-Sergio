@@ -328,6 +328,13 @@ a:hover {
     .navegacion div{
         display: none;
     }
+ .navegacion{
+    right: 0%;
+    bottom: 100%;
+ }
+ nav:hover {
+    transform: translateY(100%);
+}
     nav:hover div{
         display: block;
     }
