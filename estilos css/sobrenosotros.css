@@ -46,7 +46,7 @@ main {
 }
 
 p {
-    font-family: var(--pfuentesSize);
+    font-family: var(--pFont);
     font-size: var(--pfuentesSize);
     text-align: center;
 }
@@ -74,7 +74,6 @@ h3 {
      width: 80%;
     background-color: var(--fondo);
     display: flex;
-    align-items: center;
 }
 
 
@@ -213,12 +212,6 @@ a:hover {
 
 @media (max-width:500px){
     p{
-      font-size: 50px;
+      font-size: 20px;
     }
-}
-
-@media (orientation: landscape){
-    p{
-        font-size: 15px;
-      }
 }
