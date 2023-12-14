@@ -215,3 +215,9 @@ a:hover {
       font-size: 15px;
     }
 }
+
+@media (orientation: landscape){
+    p{
+        font-size: 15px;
+      }
+}
