@@ -5,6 +5,7 @@ body {
     height: 100vh;
 }
 
+
 :root {
     --imagenes-padding: 30px;
     --margin-generico: 10px;
@@ -12,14 +13,10 @@ body {
     --pfuentesSize: 1.8em;
     --h3fuentes: 1.6em;
     --fondoMain: #D0E8E2;
-    --fondo: #78AEC2;
-    --fondoSecciones: #C3F9FF;
-    --fondoOscuro: #254D4C;
-    --fondoMainOscuro: #B9B9B9; 
-    --fondoSeccionesOscuro: #000000;
-    --colorTextos: black;
-    --colorTextosOscuro: white;
-    
+    --fondo: #A9AABC;
+    --fondoSeccionesImportantes: #5E71C2;
+    --fondoSecciones2:  #454655;
+    --fondotextos: #FC888F;
     --pFont: textoPequenio;
     --hFont: pt;
 }
@@ -74,6 +71,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--fondoSeccionesImportantes);
    
 }
 
@@ -105,6 +103,7 @@ section {
     background-color: white;
     margin-top: 40px;
     margin-bottom: 40px;
+    background-color: var(--fondoSeccionesImportantes);
 }
 
 .contenGigante {
@@ -131,6 +130,7 @@ section {
     background-image: url(/imagenes/asesoramiento.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 .efecto{
@@ -178,11 +178,13 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    background-color:  #FC888F;
 }
 
 .imagenValoracion{
     width: 30%;
     border-radius: 50%;
+    
 }
 
 .review{

@@ -5,13 +5,15 @@ window.addEventListener("load", init);
 
 function init() {
 
-    document.querySelector(".modoOscuro").addEventListener("click", activar);
-
+   var botones = document.querySelectorAll(".modoOscuro");
+    botones.forEach(element => {
+        element.addEventListener("click", activar);
+    });
 
 }
 
 
-function activar(elemento) {
+function activar() {
     var contenedor = document.querySelector(".contenedor");
     mover(contenedor);
     cambiarColor();

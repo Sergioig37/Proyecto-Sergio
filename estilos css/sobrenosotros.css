@@ -6,23 +6,20 @@ body {
 }
 
 :root {
-    --imagenes-padding: 30px;
-    --margin-generico: 10px;
-    --imagenes-size: 45%;
-    --pfuentesSize: 1.3em;
-    --h3fuentes: 1.6em;
-    --fondoMain: #D0E8E2;
-    --fondo: #78AEC2;
-    --fondoSecciones: #C3F9FF;
-    --fondoOscuro: #254D4C;
-    --fondoMainOscuro: #B9B9B9; 
-    --fondoSeccionesOscuro: #000000;
-    --colorTextos: black;
-    --colorTextosOscuro: white;
-    
-    --pFont: textoPequenio;
-    --hFont: pt;
-}
+        --imagenes-padding: 30px;
+        --margin-generico: 10px;
+        --imagenes-size: 45%;
+        --pfuentesSize: 1.8em;
+        --h3fuentes: 1.6em;
+        --fondoMain: #D0E8E2;
+        --fondo: #A9AABC;
+        --fondoSeccionesImportantes: #5E71C2;
+        --fondoSecciones2:  #454655;
+        --fondotextos: #FC888F;
+        --pFont: textoPequenio;
+        --hFont: pt;
+    }
+
 
 @font-face {
     font-family: textoPequenio;
@@ -41,7 +38,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 130vh;
+    height: 200vh;
     background-color: var(--fondoMain);
 }
 
@@ -72,7 +69,7 @@ h3 {
 .articulo.fundacion{
     height: 33%;
      width: 80%;
-    background-color: var(--fondo);
+    background-color: var(--fondotextos);
     display: flex;
 }
 
