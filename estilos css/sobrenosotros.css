@@ -213,6 +213,12 @@ a:hover {
 
 @media (max-width:500px){
     p{
-      font-size: 10px;
+      font-size: 50px;
     }
+}
+
+@media (orientation: landscape){
+    p{
+        font-size: 15px;
+      }
 }
